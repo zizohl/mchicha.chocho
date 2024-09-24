@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chocho</title>
+                <img src="https://media.giphy.com/media/LnKonfpQ44fNvuGLkA/giphy.gif" alt="Cute animated illustration">
+
+  <style>
+    body {
+      background-color: pink;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<h1>wach katbghini kikanbghik ana ?</h1>
+
+<button id="yesButton" onclick="goToYayyyPage()">aah</button>
+<button id="noButton" onclick="moveNoButton()">laa(</button>
+
+
+<script>
+  function moveNoButton() {
+    var noButton = document.getElementById('noButton');
+    var randomX = Math.floor(Math.random() * (window.innerWidth - 100));
+    var randomY = Math.floor(Math.random() * (window.innerHeight - 50));
+
+    noButton.style.position = 'absolute';
+    noButton.style.left = randomX + 'px';
+    noButton.style.top = randomY + 'px';
+  }
+
+  function goToYayyyPage() {
+    window.location.href = 'yopiiiii.html';
+  }
+</script>
+
+</body>
+</html>
